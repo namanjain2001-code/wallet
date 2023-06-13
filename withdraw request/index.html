@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Withdraw Request</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Withdraw Request</h1>
+  </header>
+
+  <main>
+    <div id="withdrawList">
+      <!-- Withdraw request history will be dynamically generated here -->
+    </div>
+
+    <form id="withdrawForm">
+      <label for="account">Account:</label>
+      <input type="text" id="account" name="account" required>
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" min="0" required>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

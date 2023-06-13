@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transaction Page</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Transaction Page</h1>
+  </header>
+
+  <main>
+    <div id="transactionList">
+      <!-- Transaction history will be dynamically generated here -->
+    </div>
+
+    <form id="transactionForm">
+      <label for="sender">Sender:</label>
+      <input type="text" id="sender" name="sender" required>
+
+      <label for="recipient">Recipient:</label>
+      <input type="text" id="recipient" name="recipient" required>
+
+      <label for="amount">Amount:</label>
+      <input type="number" id="amount" name="amount" min="0" required>
+
+      <input type="submit" value="Transfer">
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
